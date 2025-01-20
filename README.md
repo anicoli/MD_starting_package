@@ -1,5 +1,14 @@
 # 🌟 Molecular Dynamics & Simulations Resources 🌟
 
+Welcome to this collection of resources for Molecular Dynamics (MD) simulations! Whether you're looking for theory, tutorials or tools for analysis and visualisation, we've got you covered. Let's explore the fascinating world of computational biology and MD simulations together! 
+
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
+<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
 
 ## 📚 Literature and Tutorials
 
@@ -22,6 +31,10 @@
 
 - **VMD for Dummies - Dr. Mohamed Shehata's Complete Course**  
   Learn step by step all the basics of VMD to study, visualize, and analyze MD trajectories with the [VMD Complete Course on YouTube](https://www.youtube.com/watch?v=mi6fZLrcZM8&list=PLhYF9QNr23IaG-aFub24_T8XnIbJb7fNU).
+  
+- **Bioblender Crash Course for Biochemists - Brady Johnston**  
+  Introductory videos on how Bioblender works and how to handle cutting-edge protein rendering and visualize your MD trajectory close to reality. Check out the [Bioblender Crash Course on YouTube](https://www.youtube.com/watch?v=CfkjBoOaw0g&list=PLQyfz7398elUxrY_5NbqvN0ve7hqlz_mW), and here’s more on [How Molecular Nodes Work](https://www.youtube.com/watch?v=CvmFaRVmZRU&list=PLQyfz7398elUYMdeaSYVAcXffzlSIzuSw).
+
 
 ## 📝 MD package tutorials
 
@@ -77,4 +90,25 @@
 
 - **Desmond (Schrödinger)** (Paid)  
   Learn more about [Desmond](https://www.schrodinger.com/products/desmond), another powerful MD engine.
+
+
+## 🖥️ Visualization/Render Software
+
+- **VMD**  
+  Visualize and analyze molecular dynamics simulations with [VMD](https://www.ks.uiuc.edu/Research/vmd/).
+
+- **PyMOL**  
+  A popular tool for visualization and rendering: [PyMOL](https://pymol.org/2/).
+
+- **ChimeraX**  
+  Dive into molecular visualizations with [ChimeraX](https://www.cgl.ucsf.edu/chimerax/).
+
+- **Bioblender**  
+  Render of 3D protein and MD trajectories [Bioblender](http://www.bioblender.org/).
+  
+  
+
+---
+
+Happy simulating and exploring! 😄 Whether you're new to molecular dynamics or a seasoned pro, these resources will help you take your skills to the next level! 🚀
 
