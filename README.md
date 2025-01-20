@@ -6,8 +6,6 @@ Welcome to this collection of resources for Molecular Dynamics (MD) simulations!
 <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
 <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
 <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
-<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
-<img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
 <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji"> 
 
 ## 📚 Literature and Tutorials
@@ -111,4 +109,8 @@ Welcome to this collection of resources for Molecular Dynamics (MD) simulations!
 ---
 
 Happy simulating and exploring! 😄 Whether you're new to molecular dynamics or a seasoned pro, these resources will help you take your skills to the next level! 🚀
+
+🔨 This collection is updated to include the latest materials and tutorials. Contributions and suggestions are always welcome!
+
+🧬 The emoji used in this README is sourced from the [protein-emoji repository](https://github.com/whitead/protein-emoji).
 
