@@ -113,5 +113,5 @@ Happy simulating and exploring! 😄 Whether you're new to molecular dynamics or
 
 🔨 This collection is updated to include the latest materials and tutorials. Contributions and suggestions are always welcome!
 
-🧬 The emoji used in this README is sourced from the [protein-emoji repository](https://github.com/whitead/protein-emoji).
+🧬 The emoji used in this README is sourced from the [protein-emoji repository](https://github.com/whitead/protein-emoji) by [Andrew White](https://github.com/whitead).
 
