@@ -23,10 +23,13 @@ Welcome to this collection of resources for Molecular Dynamics (MD) simulations!
 - **Review on MD and Docking**  
   A fantastic [review article on MD and docking](https://www.frontiersin.org/articles/10.3389/fphar.2018.00923/full) to understand the synergy between these two techniques.
 
+- **MD Theory and exercise**  
+Learn the fondumental theory and rules behind MD simulation: [Practical considerations for Molecular Dynamics](https://computecanada.github.io/molmodsim-md-theory-lesson-novice/aio/index.html)
+
 ## 🎥 Video Lessons
 
 - **Prof. Erik Lindahl's Complete Course**  
-  Dive into the world of molecular simulations and computational biophysics with . So much knowledge packed in there!
+  Dive into the world of molecular simulations and computational biophysics with [Erik Lindahl on youtube](https://www.youtube.com/@eriklindahl/videos). So much knowledge packed in there!
 
 - **VMD for Dummies - Dr. Mohamed Shehata's Complete Course**  
   Learn step by step all the basics of VMD to study, visualize, and analyze MD trajectories with the [VMD Complete Course on YouTube](https://www.youtube.com/watch?v=mi6fZLrcZM8&list=PLhYF9QNr23IaG-aFub24_T8XnIbJb7fNU).
