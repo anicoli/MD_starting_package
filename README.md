@@ -89,6 +89,11 @@ Learn the fondumental theory and rules behind MD simulation: [Practical consider
 - **Desmond (Schrödinger)** (Paid)  
   Learn more about [Desmond](https://www.schrodinger.com/products/desmond), another powerful MD engine.
 
+## 🤖 AI-Based Software for Conformational Ensemble Generation
+
+- **Curated list**  
+  AI-powered tools and software used to generate conformational ensembles in molecular modeling and structural biology. [Link](https://github.com/DiPizio-Lab/List_AI_tools/blob/main/conformational-ensemble-design/README.md)
+
 
 ## 🖥️ Visualization/Render Software
 
