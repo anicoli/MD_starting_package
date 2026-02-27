@@ -92,7 +92,7 @@ Learn the fondumental theory and rules behind MD simulation: [Practical consider
 ## 🤖 AI-Based Software for Conformational Ensemble Generation
 
 - **Curated list**  
-  AI-powered tools and software used to generate conformational ensembles in molecular modeling and structural biology. [Link](https://github.com/DiPizio-Lab/List_AI_tools/blob/main/conformational-ensemble-design/README.md)
+  AI-powered tools and software used to generate conformational ensembles in molecular modeling and structural biology. [Link](https://dipizio-lab.github.io/AI-tools-molecular-modeling/viewer.html)
 
 
 ## 🖥️ Visualization/Render Software
