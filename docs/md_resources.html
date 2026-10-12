@@ -165,6 +165,69 @@
     max-width: 62ch;
   }
 
+  /* ─────────── HERO STATS ─────────── */
+  .hero__stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+  .hero__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .hero__stat-num {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 60;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+  }
+  .hero__stat-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.04em;
+  }
+
+  /* ─────────── BACK TO TOP ─────────── */
+  .back-top {
+    position: fixed;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 64px);
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--rule);
+    background: var(--bg);
+    border-radius: 999px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: color 120ms, border-color 120ms, background 120ms, opacity 200ms, transform 200ms;
+    z-index: 20;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    text-decoration: none;
+  }
+  .back-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .back-top:hover { color: var(--accent); border-color: var(--accent); }
+  .back-top:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+
+  /* ─────────── TOC ACTIVE STATE ─────────── */
+  .toc a.active { color: var(--accent); }
+
   /* ─────────── SECTION NAV ─────────── */
   .toc {
     position: sticky;
@@ -289,6 +352,88 @@
     border-bottom: 1px solid color-mix(in oklab, var(--teal) 40%, transparent);
   }
   .item__desc a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ─────────── AI FEATURED CARD ─────────── */
+  .ai-feature {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    padding: 32px 36px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: color-mix(in oklab, var(--bg-2) 60%, transparent);
+    text-decoration: none;
+    border-bottom: 0;
+    transition: border-color 180ms, background 180ms;
+    position: relative;
+  }
+  .ai-feature:hover {
+    border-color: var(--accent);
+    background: color-mix(in oklab, var(--accent) 4%, var(--bg));
+  }
+  .ai-feature__body { flex: 1; min-width: 0; }
+  .ai-feature__eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+  .ai-feature__title {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 36;
+    font-weight: 500;
+    font-size: clamp(20px, 2.5vw, 28px);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0 0 14px;
+    transition: color 180ms;
+  }
+  .ai-feature:hover .ai-feature__title { color: var(--accent); }
+  .ai-feature__desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0 0 20px;
+    max-width: 60ch;
+  }
+  .ai-feature__cta {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--teal);
+    letter-spacing: 0.02em;
+    transition: color 180ms;
+  }
+  .ai-feature:hover .ai-feature__cta { color: var(--accent); }
+  .ai-feature__meta {
+    flex: none;
+    text-align: right;
+    padding-left: 48px;
+    border-left: 1px solid var(--rule);
+  }
+  .ai-feature__num {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 60;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+  }
+  .ai-feature__meta-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ink-dim);
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+  @media (max-width: 760px) {
+    .ai-feature { flex-direction: column; gap: 24px; padding: 24px 20px; }
+    .ai-feature__meta { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; padding-top: 20px; text-align: left; display: flex; gap: 32px; flex-wrap: wrap; }
+  }
 
   /* ─────────── FOOTER ─────────── */
   .footer {
@@ -454,7 +599,7 @@
   </symbol>
 </svg>
 
-<div class="shell">
+<div class="shell" id="top">
 
   <!-- HERO -->
   <header class="hero">
@@ -479,6 +624,17 @@
     <p class="hero__lede">
       Welcome to this collection of resources for Molecular Dynamics (MD) simulations! Whether you're looking for theory, tutorials or tools for analysis and visualisation, we've got you covered. Let's explore the fascinating world of computational biology and MD simulations together!
     </p>
+
+    <div class="hero__stats" aria-label="Collection overview">
+      <div class="hero__stat">
+        <span class="hero__stat-num">28</span>
+        <span class="hero__stat-label">Resources</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">7</span>
+        <span class="hero__stat-label">Sections</span>
+      </div>
+    </div>
   </header>
 
   <!-- TOC -->
@@ -664,14 +820,22 @@
     <div class="section__head">
       <h2 class="section__title"><span class="emoji">🤖</span> AI-Based Software for Conformational Ensemble Generation</h2>
     </div>
-    <div class="items">
-
-      <article class="item">
-        <h3 class="item__title">Curated list</h3>
-        <p class="item__desc">AI-powered tools and software used to generate conformational ensembles in molecular modeling and structural biology. <a href="https://dipizio-lab.github.io/AI-tools-molecular-modeling/viewer.html" target="_blank" rel="noopener">Link</a>.</p>
-      </article>
-
-    </div>
+    <a class="ai-feature" href="https://dipizio-lab.github.io/AI-tools-molecular-modeling/viewer.html" target="_blank" rel="noopener">
+      <div class="ai-feature__body">
+        <div class="ai-feature__eyebrow">DiPizio Lab · LSB@TUM</div>
+        <h3 class="ai-feature__title">AI Tools for Molecular Modeling — Curated Database</h3>
+        <p class="ai-feature__desc">A searchable, filterable collection of 114+ AI-powered tools for protein structure prediction, de novo design, docking, and conformational ensemble generation. Covers 8 categories from protein folding to protein dynamics, with links to code, webservers, and references for every entry.</p>
+        <span class="ai-feature__cta">Browse the full database ↗</span>
+      </div>
+      <div class="ai-feature__meta" aria-hidden="true">
+        <div class="ai-feature__num">114+</div>
+        <div class="ai-feature__meta-label">AI tools</div>
+        <div class="ai-feature__num" style="margin-top:16px">8</div>
+        <div class="ai-feature__meta-label">categories</div>
+        <div class="ai-feature__num" style="margin-top:16px">2019–26</div>
+        <div class="ai-feature__meta-label">coverage</div>
+      </div>
+    </a>
   </section>
 
   <!-- VISUALIZATION -->
@@ -747,21 +911,51 @@
 
 </div>
 
+<a href="#top" class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</a>
 <button class="theme" id="themeBtn" aria-label="Toggle colour scheme" title="Toggle colour scheme">◐</button>
 
 <script>
   (function () {
+    // ── Theme toggle ──
     var root = document.documentElement;
-    var btn = document.getElementById('themeBtn');
+    var themeBtn = document.getElementById('themeBtn');
     function currentScheme() {
       if (root.hasAttribute('data-theme')) return root.getAttribute('data-theme');
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
-    btn.addEventListener('click', function () {
+    themeBtn.addEventListener('click', function () {
       var next = currentScheme() === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
-      btn.textContent = next === 'dark' ? '◑' : '◐';
+      themeBtn.textContent = next === 'dark' ? '◑' : '◐';
     });
+
+    // ── Back to top ──
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        backTop.classList.add('visible');
+      } else {
+        backTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    // ── Active nav highlight ──
+    var sections = document.querySelectorAll('.section[id]');
+    var navLinks = document.querySelectorAll('.toc a[href^="#"]');
+    var tocHeight = document.querySelector('.toc') ? document.querySelector('.toc').offsetHeight : 60;
+
+    function updateActiveNav() {
+      var scrollY = window.scrollY + tocHeight + 32;
+      var current = '';
+      sections.forEach(function (s) {
+        if (s.offsetTop <= scrollY) current = s.getAttribute('id');
+      });
+      navLinks.forEach(function (a) {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    }
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
   })();
 </script>
 
