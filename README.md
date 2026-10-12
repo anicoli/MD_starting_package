@@ -10,4 +10,4 @@ Welcome to this collection of resources for Molecular Dynamics (MD) simulations!
 <img width="72" src="https://raw.githubusercontent.com/whitead/protein-emoji/main/src/protein-72-color.svg" alt="Protein Emoji">
 
 
-🌐 **[Browse the interactive web page →](https://anicoli.github.io/MD_starting_package/)**
+🌐 **[Browse the interactive web page →](https://anicoli.github.io/MD_starting_package/md_resources.html)**
